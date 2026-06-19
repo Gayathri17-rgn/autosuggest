@@ -1,3 +1,17 @@
 h1{
     color: red;
 }
+#Heading2{
+    color: blue;
+}
+.Heading{
+   color: orange;
+}
+.para{
+    border: 2px;
+    border-color: black;
+    color: olivedrab;
+    border-style: solid;
+    padding: 20px;
+    text-align: center;
+}
