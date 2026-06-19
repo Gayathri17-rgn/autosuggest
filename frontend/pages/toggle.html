@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Suggest</title>
+        <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+<h1>
+ <div class="navbar">
+        <a href="/index.html">Home</a>
+        <a href="/pages/card.html">Card</a>
+        <a href="/pages/toggle.html">Toggle</a>
+        <a href="">Random</a>
+    </div>
+</h1>
+
+<div class="card">
+    <img id="myImage" src="../images/john.png" width="200" onclick="changeImage()">
+    <div id="output"></div>
+</div>
+
+<script>
+let name = "John Doe";
+let gender = "Male";
+
+function render() {
+    document.getElementById("output").innerHTML = `
+        <h2>${name}</h2>
+        <p>${gender}</p>
+    `;
+}
+
+function changeImage() {
+    let img = document.getElementById("myImage");
+
+    if (img.src.includes("john.png")) {
+        img.src = "../images/tina.png";
+        name = "Tina";
+        gender = "Female";
+    } else {
+        img.src = "../images/john.png";
+        name = "John Doe";
+        gender = "Male";
+    }
+
+    render(); // ✅ update UI
+}
+
+// initial render
+render();
+</script>
+
+</body>
+</html>
