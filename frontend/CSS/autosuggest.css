@@ -11,3 +11,14 @@
 .main-content{
     text-align: center;
 }
+.lens{
+    position: relative;
+    left: 30px;
+}
+.search-box{
+    border-radius: 30px;
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
